@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+// font-family: 'Open Sans', sans-serif
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    width: 80%;
+    margin:auto;
+}
+section{
+    padding: 1em;
+}
+// THIRD SECTION
+
+#third{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+
+        h4, p{
+            margin: 0;
+        }
+}
+
+// FOOTER SECTION
+footer{
+    background-color: #366171;
+
+    #articles-wrap{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        margin: auto;
+
+        article{
+            h4{
+                color: white;
+                margin-bottom: 0.5em;
+            }
+            a{
+                display: block;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    } 
+
+    #some-icons{
+        padding: 2em 0 1em 0;
+        width: 20%;
+        margin: auto;
+
+        img{
+            width: 15%;
+            padding-left: 1em; 
+        }
+    }
+
+} // FOOTER ENDS

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  padding: 1em;
+}
+
+#third {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+#third h4, #third p {
+  margin: 0;
+}
+
+footer {
+  background-color: #366171;
+}
+
+footer #articles-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+}
+
+footer #articles-wrap article h4 {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+footer #articles-wrap article a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+footer #articles-wrap article a:hover {
+  text-decoration: underline;
+}
+
+footer #some-icons {
+  padding: 2em 0 1em 0;
+  width: 20%;
+  margin: auto;
+}
+
+footer #some-icons img {
+  width: 15%;
+  padding-left: 1em;
+}

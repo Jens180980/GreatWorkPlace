@@ -1,0 +1,55 @@
+header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+header .header-img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+header .logo {
+  width: 13%;
+  position: absolute;
+  left: 8%;
+}
+
+header nav {
+  display: inline-block;
+  position: absolute;
+  bottom: 4%;
+  right: 3%;
+}
+
+header nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header nav ul li:not(:last-child):after {
+  padding-left: 5px;
+  color: white;
+  content: "|";
+}
+
+header nav div {
+  display: inline-block;
+}
+
+header nav div img {
+  width: 20px;
+  position: absolute;
+  top: 1rm;
+}
+/*# sourceMappingURL=nav.css.map */

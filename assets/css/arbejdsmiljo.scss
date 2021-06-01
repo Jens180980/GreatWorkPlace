@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+
+// HEADER SECTION
+    
+
+    // INFO SECTION
+    #info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        padding: 2em 0;
+
+        article{
+            padding: 1em;
+        }
+        article:nth-of-type(1){
+            background-color: #dc6036;
+            color: white;
+        }
+        article:nth-of-type(2){
+            background-color: #5f93aa;
+            color: white;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        article:nth-of-type(3){
+            background-color: white;
+            a{
+                color: black;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+    } // #info ends
+
+
+
+    // GALLERY SECTION

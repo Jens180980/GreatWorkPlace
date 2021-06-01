@@ -1,0 +1,39 @@
+footer {
+  background-color: #366171;
+}
+
+footer #articles-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+}
+
+footer #articles-wrap article h4 {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+footer #articles-wrap article a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+footer #articles-wrap article a:hover {
+  text-decoration: underline;
+}
+
+footer #some-icons {
+  padding: 2em 0 1em 0;
+  width: 20%;
+  margin: auto;
+}
+
+footer #some-icons img {
+  width: 15%;
+  padding-left: 1em;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -5,6 +5,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -42,7 +43,7 @@ main {
 }
 
 #info article:nth-of-type(3) {
-  background-color: white;
+  background-color: #dc6036;
 }
 
 #info article:nth-of-type(3) a {
@@ -61,5 +62,30 @@ main {
 
 #info a:hover {
   text-decoration: underline;
+}
+
+.gallery-wrap {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-wrap img {
+  width: 100%;
+}
+
+.gallery-wrap figure {
+  border: 1px solid black;
+}
+
+.gallery-wrap figcaption {
+  font-size: 0.7rem;
+  background-color: #5f93aa;
+  color: white;
+  padding: 1em;
+  height: 5em;
 }
 /*# sourceMappingURL=arbejdsmiljo.css.map */

@@ -1,406 +1,161 @@
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-        // font-family: 'Open Sans', sans-serif
-        //mixing
-        @mixin section {
-            max-width: 80%;
-            margin: auto;
+// Imports and mixins
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap'); 
+
+@import 'header-footer.scss';
+@include header;
+@include footer;
+
+@mixin section {
+    max-width: 80%;
+    margin: auto;
+}
+@mixin overskrifter {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+@mixin brødtext {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 1rem;
+    margin-top: 0;
+}
+
+//BREAKPOINTS
+$tablet:1200px;
+$mobile:700px;
+
+//General settings
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-main {
+    max-width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+section{
+    margin: 1em 0;
+}
+
+// First section
+#first {
+    background-color: #5f93aa;
+    display: grid;
+    grid-template-columns: auto 60%;
+    h4 {
+        @include overskrifter;
+    }
+    p {
+        @include brødtext;
+    }
+    img {
+        width: 95%;
+        margin: 1em;
+    }
+    figure{
+        position: relative;
+    }
+    #cirkel {
+        background-color:rgba(220, 96, 54, 0.9);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div article {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h2, p{
+            margin: 0;
         }
-        
-        @mixin overskrifter {
-            font-family: 'Open Sans', sans-serif;
-            color: #fff;
-            margin: 1em;
-            font-size: 1.25em;
-            margin-bottom: 0;
+    }
+    div article p:last-child {
+        color: #000;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+// Second section
+#second {
+    padding: 1em;
+    background-color: #dc6036;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    h4 {
+        @include overskrifter;
+    }
+    p {
+        @include brødtext;
+    }
+    .figures-wrapper {
+        display: grid;
+        height: 200px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    figure {
+        width: 80%;
+        height: 80%;
+        position: relative;
+        overflow: hidden;
+        background-color: #366171;
+
+        img{
+            width: 100%
         }
-        
-        @mixin brødtext {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: lighter;
-            color: #fff;
-            font-size: 0.9em;
-            margin: 1em;
-            font-size: 20px;
-            margin-top: 0;
+    }
+    #bevaegelse {
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
         }
-        
-        //BREAKPOINTS
-        $pc: 1200PX;
-        $tablet:1200px;
-        $mobile:700px;
-        //PC
-        @media screen and (min-width: $pc) {
-            
-            .container-main {
-                max-width: 100%;
-                margin: auto;
-                font-size: 20px;
-            }
-            #first {
-                position: relative;
-                max-width: 80%;
-                margin: auto;
-                background-color: #5f93aa;
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-columns: auto 60%;
-                grid-template-columns: auto 60%;
-                h4 {
-                    @include overskrifter;
-                }
-                p {
-                    @include brødtext;
-                }
-                img {
-                    width: 95%;
-                    margin: 1em;
-                }
-                .cirkel {
-                    background-color: #dc6036;
-                    width: 250px;
-                    height: 250px;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 5em;
-                    margin-left: 3em;
-                }
-                div article {
-                    text-align: center;
-                    bottom: 0px;
-                    color: #fff;
-                }
-                div article p:last-child {
-                    color: #000;
-                }
-            }
-            #second {
-                max-width: 80%;
-                margin: auto;
-                background-color: #dc6036;
-                /* Den overflow er hidden for at gemme det der ikke er på billedet */
-                /* Filter er for at gøre billedet  lysere */
-                h4 {
-                    @include overskrifter;
-                }
-                p {
-                    @include brødtext;
-                }
-                div {
-                    display: -ms-grid;
-                    display: grid;
-                    -ms-grid-columns: auto auto auto auto;
-                    grid-template-columns: auto auto auto auto;
-                }
-                figure {
-                    width: 80%;
-                    height: 80%;
-                    position: relative;
-                    overflow: hidden;
-                    background-color: #366171;
-                }
-                img {
-                    width: 100%;
-                    display: block;
-                }
-                figcaption {
-                    background-color: #366171;
-                    width: 100%;
-                    height: 63%;
-                    color: white;
-                    position: absolute;
-                    text-align: left;
-                    -webkit-transition: 300ms ease-in-out;
-                    transition: 300ms ease-in-out;
-                }
-                figure:hover figcaption {
-                    color: white;
-                    display: -ms-grid;
-                    display: grid;
-                    background-color: none;
-                    margin-top: -40%;
-                }
-            }
-            #third {
-                max-width: 80%;
-                margin: auto;
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-columns: auto auto auto;
-                grid-template-columns: auto auto auto;
-                gap: 0.5em;
-                article {
-                    width: 100%;
-                }
-                h4 {
-                    @include overskrifter;
-                }
-                p {
-                    @include brødtext;
-                    color: #000;
-                }
-            }
-            
-        
-        // TABLET VERSION
-        @media screen and (max-width: $tablet) {
-            body {
-                width: 100%;
-            }
-            //HEADER OMRÅDE I TABLET
-            header {
-                img {
-                    width: 50%;
-                }
-                nav {
-                    background-color: #336666;
-                }
-                li {
-                    display: inline;
-                    padding: 50px;
-                }
-                nav a {
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: #fff;
-                }
-            }
-            //FØRSTE SEKTION I TABLET
-            #first {
-                @include section;
-                background-color: #5f93aa;
-                display: grid;
-                grid-template-columns: auto 60%;
-                img {
-                    width: 95%;
-                    margin: 1em;
-                }
-                .cirkel {
-                    background-color: #dc6036;
-                    width: 250px;
-                    height: 250px;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 5em;
-                    margin-left: 3em;
-                }
-                div article {
-                    text-align: center;
-                    bottom: 0px;
-                    color: #fff;
-                }
-                div article p:last-child {
-                    color: #000;
-                }
-            }
-            //ANDEN SEKTION I TABLET
-            #second {
-                @include section;
-                background-color: #dc6036;
-                div {
-                    display: grid;
-                    grid-template-columns: auto auto auto auto;
-                }
-                /* Den overflow er hidden for at gemme det der ikke er på billedet */
-                figure {
-                    width: 80%;
-                    height: 80%;
-                    position: relative;
-                    overflow: hidden;
-                    background-color: #366171;
-                }
-                /* Filter er for at gøre billedet  lysere */
-                img {
-                    width: 100%;
-                    display: block;
-                }
-                figcaption {
-                    background-color: #366171;
-                    width: 100%;
-                    height: 63%;
-                    color: white;
-                    position: absolute;
-                    text-align: left;
-                    transition: 300ms ease-in-out;
-                }
-                figure:hover figcaption {
-                    color: white;
-                    display: grid;
-                    background-color: none;
-                    margin-top: -40%;
-                }
-            }
-            // TRJEDE SEKTION I TABLET
-            #third {
-                @include section;
-                display: grid;
-                grid-template-columns: auto auto auto;
-                gap: 0.5em;
-                article {
-                    width: 100%;
-                }
-            }
-            // FOOTER SECTION I TABLET
-            footer {
-                background-color: #366171;
-                #articles-wrap {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    width: 80%;
-                    margin: auto;
-                    article {
-                        h4 {
-                            color: white;
-                            margin-bottom: 0.5em;
-                        }
-                        a {
-                            display: block;
-                            color: white;
-                            text-decoration: none;
-                        }
-                        a:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-                #some-icons {
-                    padding: 2em 0 1em 0;
-                    width: 20%;
-                    margin: auto;
-                    img {
-                        width: 15%;
-                        padding-left: 1em;
-                    }
-                }
-            } // FOOTER ENDS 
-        }
-        
-        //MOBIL VERSION STARTER
-        @media screen and (max-width: $mobile) {
-            body {
-                width: 100%;
-            }
-            //HEADER OMRÅDE I mobil
-            header {
-                img {
-                    width: 50%;
-                }
-                nav {
-                    background-color: #336666;
-                }
-                li {
-                    display: inline;
-                    padding: 50px;
-                }
-                nav a {
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: #fff;
-                }
-            }
-            //FØRSTE SEKTION I MOBIL
-            #first {
-                @include section;
-                background-color: #5f93aa;
-                img {
-                    width: 100%;
-                    margin: 1em;
-                }
-                // .cirkel {
-                //     background-color: #dc6036;
-                //     width: 10em;
-                //     height: 10em;
-                //     border-radius: 50%;
-                //     position: absolute;
-                //     top: 5em;
-                //     margin-left: 3em;
-                // }
-                // div article {
-                //     text-align: center;
-                //     bottom: 0px;
-                //     color: #fff;
-                // }
-                // div article p:last-child {
-                //     color: #000;
-                // }
-            }
-            //ANDEN SEKTION I TABLET
-            #second {
-                @include section;
-                background-color: #dc6036;
-                div {
-                    display: grid;
-                    grid-template-columns: auto auto auto auto;
-                }
-                /* Den overflow er hidden for at gemme det der ikke er på billedet */
-                figure {
-                    width: 80%;
-                    height: 80%;
-                    position: relative;
-                    overflow: hidden;
-                    background-color: #366171;
-                }
-                /* Filter er for at gøre billedet  lysere */
-                img {
-                    width: 100%;
-                    display: block;
-                }
-                figcaption {
-                    background-color: #366171;
-                    width: 100%;
-                    height: 63%;
-                    color: white;
-                    position: absolute;
-                    text-align: left;
-                    transition: 300ms ease-in-out;
-                }
-                figure:hover figcaption {
-                    color: white;
-                    display: grid;
-                    background-color: none;
-                    margin-top: -40%;
-                }
-            }
-            // TRJEDE SEKTION I TABLET
-            #third {
-                @include section;
-                display: grid;
-                grid-template-columns: auto auto auto;
-                gap: 0.5em;
-                article {
-                    width: 100%;
-                }
-            }
-            // FOOTER SECTION I TABLET
-            footer {
-                background-color: #366171;
-                #articles-wrap {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    width: 80%;
-                    margin: auto;
-                    h4 {
-                        color: white;
-                        margin-bottom: 0.5em;
-                    }
-                    a {
-                        display: block;
-                        color: white;
-                        text-decoration: none;
-                    }
-                    a:hover {
-                        text-decoration: underline;
-                    }
-                }
-                #some-icons {
-                    padding: 2em 0 1em 0;
-                    width: 20%;
-                    margin: auto;
-                    img {
-                        width: 15%;
-                        padding-left: 1em;
-                    }
-                }
-            }
-        }
-    } 
-        //MEDIA QUERIES
+    }
+    figcaption {
+        background-color: #366171;
+        width: 100%;
+        color: white;
+        text-align: left;
+        transition: transform 600ms ease-in-out;
+    }
+    figure:hover figcaption {
+        transform: translateY(-130px);
+    }
+}
+
+// Third section
+#third {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.5em;
+    article {
+        width: 100%;
+    }
+    h4 {
+        @include overskrifter;
+        color: black;
+    }
+    p {
+        @include brødtext;
+        color: #000;
+    }
+}

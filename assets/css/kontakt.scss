@@ -1,0 +1,456 @@
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+     // font-family: 'Open Sans', sans-serif
+     //mixing
+
+@import 'header-footer.scss';
+@include header;
+@include footer;
+
+     @mixin section {
+         max-width: 80%;
+         margin: auto;
+     }
+     
+     @mixin overskrifter {
+         font-family: 'Open Sans', sans-serif;
+         color: #fff;
+         margin: 1em;
+         font-size: 1.25em;
+         margin-bottom: 0;
+     }
+     
+     @mixin brødtext {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: lighter;
+         color: #fff;
+         font-size: 0.9em;
+         margin: 1em;
+         font-size: 1.25em;
+         margin-top: 0;
+     }
+     
+     //BREAKPOINTS
+     $pc: 1200PX;
+     $tablet:1200px;
+     $mobile:700px;
+     //PC
+     @media screen and (min-width: $pc) {
+         //SEKTION FIRST I PC VERSION - EMILIE
+         #first {
+             @include section;
+             article h4 {
+                 @include overskrifter;
+                 color: #000;
+                 margin: 0;
+             }
+             article p {
+                 @include brødtext;
+                 color: #000;
+                 margin: 0;
+                 margin-bottom: 1em;
+             }
+             figure {
+                 display: grid;
+                 grid-template-columns: 60% auto;
+                 gap: 0.5em;
+                 margin: 0;
+                 width: 100%;
+             }
+             img {
+                 width: 100%;
+                 height: 100%;
+             }
+             figcaption {
+                 background-color: #5f93aa;
+             }
+             h4,
+             h5 {
+                 @include overskrifter;
+             }
+             p {
+                 @include brødtext;
+             }
+         }
+         //SEKTION FIRST I PC VERSION - EMILIE
+         #second {
+             @include section;
+             padding: 1em 0;
+             display: grid;
+             grid-template-columns: auto 65%;
+             gap: 0.5em;
+             img {
+                 width: 100%;
+                 height: 100%;
+             }
+             // Kontakt form
+             fieldset {
+                 border: solid 1px #366171;
+             }
+             label {
+                 color: #bebebe;
+                 margin-right: 1em;
+                 padding: 0;
+             }
+             #fullname,
+             #lastname,
+             #adress,
+             #phone,
+             #email {
+                 margin-left: 20px;
+                 margin-bottom: 15px;
+                 padding: 5px 5px;
+                 width: 50%;
+                 height: 35px;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+                 display: block;
+             }
+             #postnummer {
+                 margin-left: 20px;
+                 margin-bottom: 15px;
+                 padding: 5px 5px;
+                 width: 10%;
+                 height: 35px;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+             }
+             .flex {
+                 display: flex;
+             }
+             h4 {
+                 @include overskrifter;
+                 color: #366171;
+             }
+             h5 {
+                 @include overskrifter;
+                 color: #000;
+                 margin-bottom: 0.7em;
+             }
+             //Chech boksene - 3 første - text stylet som label
+             #ansvarlig,
+             #Repræsentant,
+             #Organisation {
+                 margin-bottom: 2em;
+                 margin-left: 1em;
+                 border: solid 1px #366171;
+             }
+             //Radio boksene - 3 sidste- text stylet som label
+             input.radio {
+                 margin-bottom: 2em;
+                 margin-left: 1em;
+             }
+             textarea {
+                 resize: none;
+                 padding: 5px 5px;
+                 display: block;
+                 width: 98%;
+                 height: 100px;
+                 font-size: 1.2em;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+             }
+             button {
+                 width: 14%;
+                 display: inline;
+                 background-color: transparent;
+                 border: solid 1px #366171;
+                 padding: 5px 0;
+                 text-align: center;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 color: #bebebe;
+                 margin: 0 1em;
+             }
+             button#reset {
+                 margin-left: 20em;
+             }
+             #submit:hover {
+                 background-color: #366171;
+             }
+             #reset:hover {
+                 background-color: #dc6036;
+             }
+         }
+     }
+     
+     //Kontakt i tablet version
+     @media screen and (max-width: $tablet) {
+         //SEKTION FIRST I PC VERSION - EMILIE
+         #first {
+             @include section;
+             article h4 {
+                 @include overskrifter;
+                 color: #000;
+                 margin: 0;
+             }
+             article p {
+                 @include brødtext;
+                 color: #000;
+                 margin: 0;
+                 margin-bottom: 1em;
+             }
+             figure {
+                 display: grid;
+                 grid-template-columns: 60% auto;
+                 gap: 0.5em;
+                 margin: 0;
+                 width: 100%;
+             }
+             img {
+                 width: 100%;
+                 height: 100%;
+             }
+             figcaption {
+                 background-color: #5f93aa;
+             }
+             h4,
+             h5 {
+                 @include overskrifter;
+             }
+             p {
+                 @include brødtext;
+             }
+         }
+         //SEKTION FIRST I PC VERSION - EMILIE
+         #second {
+             @include section;
+             padding: 1em 0;
+             display: grid;
+             grid-template-columns: auto 65%;
+             gap: 0.5em;
+             img {
+                 width: 100%;
+                 height: 100%;
+             }
+             // Kontakt form
+             fieldset {
+                 border: solid 1px #366171;
+             }
+             label {
+                 color: #bebebe;
+                 margin-right: 1em;
+                 padding: 0;
+             }
+             #fullname,
+             #lastname,
+             #adress,
+             #phone,
+             #email {
+                 margin-left: 20px;
+                 margin-bottom: 15px;
+                 padding: 5px 5px;
+                 width: 50%;
+                 height: 35px;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+                 display: block;
+             }
+             #postnummer {
+                 margin-left: 20px;
+                 margin-bottom: 15px;
+                 padding: 5px 5px;
+                 width: 10%;
+                 height: 35px;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+             }
+             .flex {
+                 display: flex;
+             }
+             h4 {
+                 @include overskrifter;
+                 color: #366171;
+             }
+             h5 {
+                 @include overskrifter;
+                 color: #000;
+                 margin-bottom: 0.7em;
+             }
+             //Chech boksene - 3 første - text stylet som label
+             #ansvarlig,
+             #Repræsentant,
+             #Organisation {
+                 margin-bottom: 2em;
+                 margin-left: 1em;
+                 border: solid 1px #366171;
+             }
+             //Radio boksene - 3 sidste- text stylet som label
+             input.radio {
+                 margin-bottom: 2em;
+                 margin-left: 1em;
+             }
+             textarea {
+                 resize: none;
+                 padding: 5px 5px;
+                 display: block;
+                 width: 98%;
+                 height: 100px;
+                 font-size: 1.2em;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+             }
+             button {
+                 width: 14%;
+                 display: inline;
+                 background-color: transparent;
+                 border: solid 1px #366171;
+                 padding: 5px 0;
+                 text-align: center;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 color: #bebebe;
+                 margin: 0 1em;
+             }
+             button#reset {
+                 margin-left: 20em;
+             }
+             #submit:hover {
+                 background-color: #366171;
+             }
+             #reset:hover {
+                 background-color: #dc6036;
+             }
+         }
+     }
+     
+     //Kontakt i tablet version
+     @media screen and (max-width: $mobile) {
+         //SEKTION FIRST I PC VERSION - EMILIE
+         #first {
+             @include section;
+             article h4 {
+                 @include overskrifter;
+                 color: #000;
+                 margin: 0;
+             }
+             article p {
+                 @include brødtext;
+                 color: #000;
+                 margin: 0;
+                 margin-bottom: 1em;
+             }
+             figure {
+                 display: block;
+                 margin: 0;
+                 width: 100%;
+             }
+             img {
+                 width: 100%;
+             }
+             figcaption {
+                 background-color: #5f93aa;
+             }
+             h4 {
+                 @include overskrifter;
+                 padding-top: 1em
+             }
+             h5 {
+                 @include overskrifter;
+             }
+             p {
+                 @include brødtext;
+             }
+         }
+         //SEKTION FIRST I PC VERSION - EMILIE
+         #second {
+             @include section;
+             display: block;
+             img {
+                 width: 100%;
+             }
+             // Kontakt form
+             fieldset {
+                 border: solid 1px #366171;
+             }
+             label {
+                 color: #bebebe;
+                 margin-right: 1em;
+                 padding: 0;
+             }
+             #fullname,
+             #lastname,
+             #adress,
+             #phone,
+             #email {
+                 margin-left: 20px;
+                 margin-bottom: 15px;
+                 padding: 5px 5px;
+                 width: 50%;
+                 height: 35px;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+                 display: block;
+             }
+             #postnummer {
+                 margin-left: 20px;
+                 margin-bottom: 15px;
+                 padding: 5px 5px;
+                 width: 10%;
+                 height: 35px;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+             }
+             .flex {
+                 display: flex;
+             }
+             h4 {
+                 @include overskrifter;
+                 color: #366171;
+             }
+             h5 {
+                 @include overskrifter;
+                 color: #000;
+                 margin-bottom: 0.7em;
+             }
+             //Chech boksene - 3 første - text stylet som label
+             #ansvarlig,
+             #Repræsentant,
+             #Organisation {
+                 margin-bottom: 2em;
+                 margin-left: 1em;
+                 border: solid 1px #366171;
+             }
+             //Radio boksene - 3 sidste- text stylet som label
+             input.radio {
+                 margin-bottom: 2em;
+                 margin-left: 1em;
+             }
+             textarea {
+                 resize: none;
+                 padding: 5px 5px;
+                 display: block;
+                 width: 98%;
+                 height: 100px;
+                 font-size: 1.2em;
+                 border: solid 1px #366171;
+                 background-color: transparent;
+             }
+             button {
+                 width: 14%;
+                 display: inline;
+                 background-color: transparent;
+                 border: solid 1px #366171;
+                 padding: 5px 0;
+                 text-align: center;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 color: #bebebe;
+                 margin: 0 1em;
+             }
+             button#reset {
+                 margin-left: 10em;
+             }
+             #submit:hover {
+                 background-color: #366171;
+             }
+             #reset:hover {
+                 background-color: #dc6036;
+             }
+         }
+     }

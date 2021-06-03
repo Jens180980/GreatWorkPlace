@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 header {
   position: relative;
@@ -287,4 +289,267 @@ section {
   margin: 1rem;
   margin-top: 0;
   color: #000;
+}
+
+.container-main {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  font-size: 20px;
+}
+
+.textdiv {
+  max-width: 80%;
+  margin: auto;
+}
+
+.textdiv .førsteP {
+  font-weight: bold;
+  margin: 0 0 0 10px;
+}
+
+.textdiv .andenP {
+  margin: 0 0 20px 0;
+}
+
+.textdiv .andenP a {
+  color: black;
+  font-weight: bold;
+}
+
+.textdiv .andenP {
+  margin: 0 0 0 10px;
+}
+
+.video-section {
+  max-width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  grid-gap: 10px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.video-section img {
+  width: 100%;
+}
+
+.video-section article {
+  background-color: #5f93aa;
+  color: white;
+  padding: 10px;
+}
+
+.video-section article a {
+  color: white;
+}
+
+.video-section article h4 {
+  margin: 0 0 10px 0;
+}
+
+.video-section article p {
+  font-size: 1.1vw;
+}
+
+.video.active {
+  visibility: visible;
+}
+
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.video video {
+  position: relative;
+  max-width: 60%;
+  outline: none;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  max-width: 40px;
+}
+
+.kontor {
+  max-width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+}
+
+.kontor article {
+  background-color: #dc6036;
+  padding: 10px;
+  color: white;
+}
+
+.kontor img {
+  width: 100%;
+}
+
+.kontor h4 {
+  margin: 0 0 10px 0;
+}
+
+.kontor p {
+  font-size: 1.1vw;
+}
+
+.Hjemmearbejdspladsen {
+  max-width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+}
+
+.Hjemmearbejdspladsen article {
+  background-color: #dc6036;
+  padding: 10px;
+  color: white;
+}
+
+.Hjemmearbejdspladsen img {
+  width: 100%;
+}
+
+.Hjemmearbejdspladsen h4 {
+  margin: 0 0 10px 0;
+}
+
+.Hjemmearbejdspladsen p {
+  font-size: 1.1vw;
+}
+
+.medarbejdere {
+  max-width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+.medarbejdere img {
+  height: 100%;
+  width: 100%;
+  opacity: 80%;
+}
+
+.medarbejdere img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 100%;
+}
+
+figure {
+  margin: 0 10px 0 0;
+  padding: 0;
+  position: relative;
+}
+
+figcaption {
+  background-color: #366171;
+  opacity: 80%;
+  width: 100%;
+  position: absolute;
+  margin-top: -86px;
+}
+
+figcaption p {
+  color: white;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+.Lovstof {
+  max-width: 80%;
+  margin: auto;
+}
+
+.Lovstof article {
+  background-color: #366171;
+  padding: 10px;
+  color: white;
+}
+
+.Lovstof img {
+  width: 100%;
+}
+
+.Lovstof h4 {
+  margin: 0 0 10px 0;
+}
+
+.Lovstof p {
+  font-size: 1.1vw;
+}
+
+.Lovstof a {
+  color: white;
+}
+
+.vidste-du {
+  max-width: 80%;
+  margin: auto;
+  background-color: #dc6036;
+  padding: 0;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+}
+
+.vidste-du a {
+  color: white;
+}
+
+.vidste-du img {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.vidste-du ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
 }

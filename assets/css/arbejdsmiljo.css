@@ -1,4 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+header .header-img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+header .logo {
+  width: 13%;
+  position: absolute;
+  left: 8%;
+}
+
+header nav {
+  display: inline-block;
+  position: absolute;
+  bottom: 4%;
+  right: 3%;
+}
+
+header nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header nav ul li:not(:last-child):after {
+  padding-left: 5px;
+  color: white;
+  content: "|";
+}
+
+header nav div {
+  display: inline-block;
+}
+
+header nav div img {
+  width: 20px;
+  position: absolute;
+  top: 1rm;
+}
+
+footer {
+  background-color: #366171;
+  width: 100%;
+}
+
+footer #articles-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+}
+
+footer #articles-wrap article h4 {
+  padding-top: 15px;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+footer #articles-wrap article a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+footer #articles-wrap article a:hover {
+  text-decoration: underline;
+}
+
+footer #some-icons {
+  padding: 2em 0 1em 0;
+  width: 20%;
+  margin: auto;
+}
+
+footer #some-icons img {
+  width: 15%;
+  padding-left: 1em;
+}
+
 body {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -88,4 +184,3 @@ main {
   padding: 1em;
   height: 5em;
 }
-/*# sourceMappingURL=arbejdsmiljo.css.map */

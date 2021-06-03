@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+@import 'header-footer.scss';
+@include header;
+@include footer;
+
 body{
     width: 100%;
     box-sizing: border-box;

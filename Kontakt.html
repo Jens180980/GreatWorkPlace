@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/kontakt.css">
+    <!-- <link rel="stylesheet" href="assets/css/header-footer.css"> -->
+    <script src="assets/js/kontakt.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- FÆLLLES HEADER TIL ALLE SIDER -->
+    <header>
+        <img class="header-img" src="./assets//media//Header-Img.png" alt="">
+        <img class="logo" src="./assets/media/company_logo.png" alt="company logo">
+        <nav>
+            <ul>
+                <li><a href="#">Start</a></li>
+                <li><a href="#">Arbejdsmiljø</a></li>
+                <li><a href="#">Ydelser</a></li>
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <div>
+                <input type="text">
+                <img src="./assets/media/lup.png" alt="søgelup">
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEKTION 1 - TEXT+BILLEDE - GRIDS -->
+    <section id="first">
+        <article>
+            <h4>Great Work Place Galleri.</h4>
+            <p>Se udvalgte eksempler på indretning af arbejdspladsen her.</p>
+        </article>
+        <figure>
+            <img src="assets/media/Thegang.jpg" alt="">
+            <figcaption>
+                <h4>Kontaktinformationer.</h4>
+                <p>
+                    Great Work Place<br> Lumbalgade 66 <br> 9000 Aalborg
+                </p>
+                <p>
+                    Tlf. +45 9988 7766 <br> E-mail: nopain@mail.dk
+                </p>
+                <p>
+                    Du kan kontakte udvalgt konsulenter dagligt mellem kl. 09.00 - 16.00
+                </p>
+                <h5> Allerede Kunde?</h5>
+                <p>
+                    Kontakt din konsulent på alle hverdage 07.00 - 21.00
+                </p>
+                <h5>Udfyld kontaktformular.</h5>
+                <p>
+                    Du kan altid kontakte een af vore medarbejdere ved at udfylde og sende forespørgsel til kundeservice på nedenstående kontaktformular.
+                </p>
+
+            </figcaption>
+        </figure>
+
+    </section>
+    <!-- SEKTION 2 - FORM -->
+    <section id="second">
+        <img src="assets/media/Contacts-Call.jpg" alt="Contacts-Call">
+        <form id="form">
+            <fieldset>
+                <h4>Udfyld kontaktformular, så vender vi tilbage.</h4>
+                <!-- felter til personlige oplysninger -->
+                <input type="text" name="fullname" id="fullname" placeholder="Navn">
+                <input type="text" name="lastname" id="lastname" placeholder="Efternavn">
+                <div class="flex">
+                    <input type="text" name="adress" id="adress" placeholder="Adresse">
+                    <input type="number" name="adress-number" id="postnummer" placeholder="Postnr">
+                </div>
+                <input type="text" name="phone" id="phone" placeholder="Telefonnummer">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+
+                <h5>Organisation</h5>
+
+
+                <!--  3 første check box  -->
+                <input type="checkbox" id="ansvarlig" name="ansvarlig" value="accept" />
+                <label for="ansvarlig"> Firma-ansvarlig</label>
+
+                <input type="checkbox" id="Repræsentant" name="Repræsentant" value="accept" />
+                <label for="Repræsentant"> Repræsentant</label>
+
+                <input type="checkbox" id="Organisation" name="Organisation" value="accept" />
+                <label for="Organisation"> Organisation</label>
+                <br>
+                <!-- radio button - 3 sidste -->
+
+                <input type="radio" name="radiobtn" class="radio" value="APV">
+                <label for="radiobtn">APV</label>
+                <input type="radio" name="radiobtn" class="radio" value="Certifikater">
+                <label for="radiobtn">Certifikater</label>
+                <input type="radio" name="radiobtn" class="radio" value="Lovstof">
+                <label for="radiobtn">Lovstof</label>
+                <br>
+                <!-- Plads til kommentar -->
+                <textarea name="kommentar" id="kommentar" placeholder="kommentar"></textarea>
+                <br>
+
+                <!-- Div er lavet til alert-text i javascript -->
+                <div id="Text" style="color: red"></div>
+                <!-- this.form peger på vores form tag og tger derfor hele formen ind i funktionen -->
+
+                <!-- <div class="grid"> -->
+                <!-- check box til nydhedsbrev -->
+                <input type="radio" name="nyhedsbrev" value="nyhedsbrev" id="nyhed">
+                <label for="nyhedsbrev">Nyhedsbrev</label>
+
+                <!-- SEND OG NUSTIL KNAP -->
+
+                <button type="reset" id="reset">Fortryd</button>
+                <button type="button" onclick="formValidate(this.form)" id="submit">Send</button>
+                <!-- </div> -->
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- FÆLLLES FOOTER TIL ALLE SIDER -->
+    <footer>
+        <div id="articles-wrap">
+            <article>
+                <a href=""></a>
+                <h4>Trivsel:</h4>
+                <a href="#">Godt psykisk arbejdsmiljø</a>
+                <a href="#">Stress og stresshåndtering</a>
+                <a href="#">Samarbejde og relationer</a>
+                <a href="#">Mobning på arbejdspladsen</a>
+                <a href="#">Konflikter på arbejdspladsen</a>
+                <a href="#">Trusler og vold på arbejdspladsen</a>
+            </article>
+            <article>
+                <a href=""></a>
+                <h4>Indeklima:</h4>
+                <a href="#">Generende støj</a>
+                <a href="#">Kulde og træk</a>
+                <a href="#">Luftkvalitet</a>
+                <a href="#">Arbejdslys</a>
+                <a href="#">Rengøring</a>
+                <a href="#">Fugt og skimmelsvampe</a>
+            </article>
+            <article>
+                <a href=""></a>
+                <h4>Din arbejdsplads:</h4>
+                <a href="#">Daginstitution</a>
+                <a href="#">Kontor</a>
+                <a href="#">Undervisning</a>
+                <a href="#">Sygehus</a>
+                <a href="#">Privat praksis</a>
+                <a href="#">Forskning</a>
+            </article>
+            <article>
+                <a href=""></a>
+                <h4>Arbejdsmiljøarbejdet:</h4>
+                <a href="#">Det daglige samarbejde:</a>
+                <a href="#">APV - Arbejdspladsvurdering</a>
+                <a href="#">Arbejdsulykker - et overblik</a>
+                <a href="#">Arbejdsmiljøorganisationen</a>
+                <a href="#">Metoder i arbejdsmiljøarbejdet</a>
+                <a href="#">UMV - Miljøvurdering</a>
+            </article>
+        </div>
+        <div id="some-icons">
+
+            <a href="#"><img src="./assets/media/facebook.png" alt="Facebook-logo"></a>
+            <a href="#"><img src="./assets/media/google.png" alt="google-logo"></a>
+            <a href="#"><img src="./assets/media/twitter.png" alt="twitter-logo"></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1129,17 +1129,12 @@ footer #some-icons img {
   font-size: 1.1vw;
 }
 
-.styled-section article {
-  display: block;
-}
-
 .styled-section img {
   opacity: 80%;
 }
 
 .styled-section h4, .styled-section p {
   font-size: 1.1vw;
-  margin: 20px;
 }
 
 .styled-section img:hover {
@@ -1175,28 +1170,4 @@ footer #some-icons img {
 .textdiv a {
   color: #dc6036;
 }
-
-@media screen and (max-width: 1200px) and (min-width: 700px) {
-  .styled-section {
-    display: block;
-  }
-  .styled-section article h4 {
-    font-size: 4vw;
-  }
-  .styled-section article p {
-    font-size: 2vw;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .styled-section {
-    display: block;
-  }
-  .styled-section article h4 {
-    font-size: 6vw;
-  }
-  .styled-section article p {
-    font-size: 4vw;
-  }
-}
-/*# sourceMappingURL=cases.css.map */
+/*# sourceMappingURL=cases_old.css.map */

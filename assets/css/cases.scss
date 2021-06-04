@@ -5,16 +5,20 @@
 @include header;
 @include footer;
 
-.styled-section {
+.styled-section { 
 
     @include styled-section();
     padding-bottom: 15px;
+    article {
+        display: block;
+    }
     img {
         opacity: 80%;
     }
     
     h4 , p{
         font-size: 1.1vw;
+        margin: 20px;
     }
     
     img:hover {
@@ -36,4 +40,41 @@
 .textdiv a {
     color: #dc6036;
 
+}
+
+//BREAKPOINTS
+$tablet:1200px;
+$mobile:700px;
+
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+    .styled-section {
+        display: block;
+        article {
+          
+            h4 {
+                font-size: 4vw;
+               
+            }
+            p {
+                font-size: 2vw;
+                
+            }
+        }
+    }
+
+}
+@media screen and (max-width:700px) {
+    .styled-section {
+        display: block;
+        article {
+            h4 {
+                font-size: 6vw;
+                
+            }
+            p {
+                font-size: 4vw;
+            }
+        }
+    }
 }

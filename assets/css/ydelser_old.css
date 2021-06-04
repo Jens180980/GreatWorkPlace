@@ -327,14 +327,10 @@ section {
   }
 }
 
-.container-main {
+main {
   font-family: 'Open Sans', sans-serif;
   margin: auto;
   font-size: 20px;
-}
-
-section {
-  padding: 10px;
 }
 
 .textdiv {
@@ -369,6 +365,7 @@ section {
       grid-template-columns: 60% 40%;
   grid-gap: 10px;
   position: relative;
+  padding-bottom: 15px;
 }
 
 .video-section img {
@@ -438,12 +435,12 @@ section {
 .kontor {
   max-width: 80%;
   margin: auto;
-  margin-bottom: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
   grid-gap: 10px;
+  margin-bottom: 20px;
 }
 
 .kontor article {
@@ -542,7 +539,7 @@ figcaption p {
 
 .Lovstof article {
   background-color: #366171;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
@@ -593,75 +590,4 @@ figcaption p {
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
 }
-
-@media screen and (max-width: 1200px) and (min-width: 700px) {
-  .video-section, .kontor, .Hjemmearbejdspladsen {
-    display: block;
-    position: relative;
-  }
-  .video-section article p, .kontor article p, .Hjemmearbejdspladsen article p {
-    font-size: 1.5vw;
-  }
-  .vidste-du ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  .vidste-du li {
-    padding: 10px;
-  }
-  .Lovstof p {
-    font-size: 1.8vw;
-  }
-  .medarbejdere {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  .medarbejdere img {
-    width: 80%;
-  }
-  .medarbejdere figcaption {
-    width: 80%;
-  }
-  .medarbejdere figcaption p {
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .video-section, .kontor, .Hjemmearbejdspladsen {
-    display: block;
-    position: relative;
-  }
-  .video-section article p, .kontor article p, .Hjemmearbejdspladsen article p {
-    font-size: 3vw;
-  }
-  .vidste-du ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    display: block;
-  }
-  .vidste-du li {
-    padding: 10px;
-  }
-  .Lovstof p {
-    font-size: 3vw;
-  }
-  .medarbejdere {
-    display: block;
-  }
-  .medarbejdere img {
-    width: 80%;
-  }
-  .medarbejdere figcaption {
-    width: 80%;
-  }
-}
-/*# sourceMappingURL=ydelser.css.map */
+/*# sourceMappingURL=ydelser_old.css.map */

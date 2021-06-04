@@ -32,17 +32,6 @@
         article {
             background-color: #5f93aa;
             color: white;
-            display: grid;
-    grid-template-columns: 60% 40%;
-    grid-gap: 10px;
-    position:relative;
-    padding-bottom: 15px;
-    img {
-        width: 100%;
-    }
-        article {
-            background-color: #5f93aa;
-            color: white;
             padding: 10px;
         a{
             color: white;
@@ -54,28 +43,14 @@
             font-size: 1.1vw;
         }
     }
-        a{
-            color: white;
-        }
-        h4 {
-            margin: 0 0 10px 0;
-        }
-        p{
-            font-size: 1.1vw;
-        }
-    }
 }
-    .container-main {
+    main {
         font-family: 'Open Sans', sans-serif;
         margin: auto;
         font-size: 20px;
-        
-    }
-    section{
-        padding: 10px;
     }
     @mixin textdiv {
-        
+        @include section;
         .førsteP {
             font-weight: bold;
             margin: 0 0 0 10px;
@@ -93,7 +68,6 @@
     }
     .textdiv{
         @include textdiv;
-        @include section;
         .andenP {
             margin: 0 0 0 10px;
         }
@@ -101,31 +75,7 @@
     
     
     .video-section {
-        @include section;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-gap: 10px;
-        position:relative; 
-       
-
-        img {
-            width: 100%;
-        }
-        article {
-            background-color: #5f93aa;
-            color: white;
-            padding: 10px;
-        a{
-            color: white;
-        }
-        h4 {
-            margin: 0 0 10px 0;
-        }
-        p{
-            font-size: 1.1vw;
-        }
-    }
-        
+        @include styled-section;
     }
     .video.active {
         visibility: visible;
@@ -160,12 +110,11 @@
     }
     
     .kontor {
-        @include section;
-        margin-bottom: 15px;
-            // @include section;
+            @include section;
             display: grid;
             grid-template-columns: 40% 60%;
             grid-gap: 10px;
+            margin-bottom: 20px;
         article {
             background-color: #dc6036;
             padding: 10px;
@@ -239,10 +188,10 @@
         }
     
         .Lovstof {
-             @include section;
+            @include section;
             article {
                 background-color: #366171;
-                padding: 20px;
+                padding: 10px;
                 color: white;
             }
             img {
@@ -285,89 +234,3 @@
         }
     
     }
-
-    //BREAKPOINTS
-    $tablet:1200px;
-    $mobile:700px;
-
-
-    @media screen and (max-width: 1200px) and (min-width: 700px) {
-        .video-section, .kontor, .Hjemmearbejdspladsen {
-            display: block;
-            position:relative;
-            article {
-                p {
-                    font-size: 1.5vw;
-                }
-            }
-        }
-    
-       .vidste-du {
-           ul {
-            list-style-type:none;
-            padding:0 ;
-            width: 100%;
-            display: grid;
-            grid-template-columns: auto auto;
-           }
-           li {
-               padding: 10px;
-           }
-       }
-       .Lovstof p {
-           font-size: 1.8vw;
-       }
-       .medarbejdere {
-        display: grid;
-        grid-template-columns: auto auto;
-        img{
-            width: 80%;
-        }
-        figcaption {
-            width: 80%;
-            p {
-               font-size: 1.5vw;
-            }
-        }
-       }
-       
-    }
-
-    @media screen and (max-width:700px) {
-        .video-section, .kontor, .Hjemmearbejdspladsen {
-            display: block;
-            position:relative;
-            article {
-                p {
-                    font-size: 3vw;
-                }
-            }
-        }
-    
-       .vidste-du {
-           ul {
-            list-style-type:none;
-            padding:0 ;
-            width: 100%;
-            display: block;
-           }
-           li {
-               padding: 10px;
-           }
-       }
-       .Lovstof p {
-           font-size: 3vw;
-       }
-       .medarbejdere {
-        display: block;
-        img{
-            width: 80%;
-        }
-        figcaption {
-            width: 80%;
-        }
-       }
-       
-    }
-
-    

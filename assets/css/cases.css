@@ -106,7 +106,7 @@ footer #some-icons img {
 }
 
 .container-main {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   font-size: 20px;
 }
@@ -222,7 +222,7 @@ section {
 #second .figures-wrapper {
   display: -ms-grid;
   display: grid;
-  height: 200px;
+  margin: 1em 0 0 1em;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
@@ -230,35 +230,39 @@ section {
 #second figure {
   width: 80%;
   height: 80%;
-  position: relative;
-  overflow: hidden;
   background-color: #366171;
 }
 
 #second figure img {
   width: 100%;
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+#second figure img:hover {
+  opacity: 1;
+}
+
+#second #bevaegelse {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 #second #bevaegelse img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 #second figcaption {
   background-color: #366171;
   width: 100%;
+  height: 70px;
+  font-size: 1rem;
+  padding: 10px;
   color: white;
-  text-align: left;
-  -webkit-transition: -webkit-transform 600ms ease-in-out;
-  transition: -webkit-transform 600ms ease-in-out;
-  transition: transform 600ms ease-in-out;
-  transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
-}
-
-#second figure:hover figcaption {
-  -webkit-transform: translateY(-130px);
-          transform: translateY(-130px);
+  text-align: center;
 }
 
 #third {
@@ -290,6 +294,18 @@ section {
   margin: 1rem;
   margin-top: 0;
   color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-main {
+    width: 90%;
+  }
+  #first {
+    display: block;
+  }
+  #second figcaption {
+    font-size: 0.6rem;
+  }
 }
 
 header {
@@ -396,7 +412,7 @@ footer #some-icons img {
 }
 
 .container-main {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   font-size: 20px;
 }
@@ -512,7 +528,7 @@ section {
 #second .figures-wrapper {
   display: -ms-grid;
   display: grid;
-  height: 200px;
+  margin: 1em 0 0 1em;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
@@ -520,35 +536,39 @@ section {
 #second figure {
   width: 80%;
   height: 80%;
-  position: relative;
-  overflow: hidden;
   background-color: #366171;
 }
 
 #second figure img {
   width: 100%;
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+#second figure img:hover {
+  opacity: 1;
+}
+
+#second #bevaegelse {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 #second #bevaegelse img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 #second figcaption {
   background-color: #366171;
   width: 100%;
+  height: 70px;
+  font-size: 1rem;
+  padding: 10px;
   color: white;
-  text-align: left;
-  -webkit-transition: -webkit-transform 600ms ease-in-out;
-  transition: -webkit-transform 600ms ease-in-out;
-  transition: transform 600ms ease-in-out;
-  transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
-}
-
-#second figure:hover figcaption {
-  -webkit-transform: translateY(-130px);
-          transform: translateY(-130px);
+  text-align: center;
 }
 
 #third {
@@ -582,7 +602,19 @@ section {
   color: #000;
 }
 
-.container-main {
+@media screen and (max-width: 1200px) {
+  .container-main {
+    width: 90%;
+  }
+  #first {
+    display: block;
+  }
+  #second figcaption {
+    font-size: 0.6rem;
+  }
+}
+
+main {
   font-family: 'Open Sans', sans-serif;
   margin: auto;
   font-size: 20px;
@@ -695,6 +727,7 @@ section {
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
   grid-gap: 10px;
+  margin-bottom: 20px;
 }
 
 .kontor article {
@@ -1019,3 +1052,4 @@ footer #some-icons img {
 .textdiv a {
   color: #dc6036;
 }
+/*# sourceMappingURL=cases.css.map */

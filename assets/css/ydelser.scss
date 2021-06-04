@@ -44,7 +44,7 @@
         }
     }
 }
-    .container-main {
+    main {
         font-family: 'Open Sans', sans-serif;
         margin: auto;
         font-size: 20px;
@@ -114,6 +114,7 @@
             display: grid;
             grid-template-columns: 40% 60%;
             grid-gap: 10px;
+            margin-bottom: 20px;
         article {
             background-color: #dc6036;
             padding: 10px;

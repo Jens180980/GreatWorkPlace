@@ -78,3 +78,27 @@ main{
         height: 5em;
     }
 }
+
+// MEDIA QUERIES
+// MEDIA QUERIES 700-1200PX
+@media screen and (max-width: 1200px){
+
+
+    #info{
+        display: block;
+
+        img{
+            margin-bottom: 3em;
+        }
+    }
+
+} // MQ 1200PX ENDS
+
+// MEDIA QUERIES UNDER 700PX
+@media screen and (max-width: 700px){
+
+    .gallery-wrap{
+        display: block;
+    }
+
+} // MQ 700PX ENDS

@@ -72,6 +72,9 @@
              }
          }
          //SEKTION FIRST I PC VERSION - EMILIE
+         header #hamburger {
+            display: none;
+        }
          #second {
              @include section;
              padding: 1em 0;
@@ -177,7 +180,10 @@
      
      //Kontakt i tablet version
      @media screen and (max-width: $tablet) {
-         //SEKTION FIRST I PC VERSION - EMILIE
+         //SEKTION FIRST I TABLET VERSION - EMILIE
+         header #hamburger {
+            display: none;
+        }
          #first {
              @include section;
              article h4 {
@@ -192,7 +198,7 @@
                  margin-bottom: 1em;
              }
              figure {
-                 display: grid;
+                 display: block;
                  grid-template-columns: 60% auto;
                  gap: 0.5em;
                  margin: 0;
@@ -213,7 +219,7 @@
                  @include brødtext;
              }
          }
-         //SEKTION FIRST I PC VERSION - EMILIE
+         //SEKTION SECOND I PC VERSION - EMILIE
          #second {
              @include section;
              padding: 1em 0;
@@ -292,22 +298,22 @@
                  background-color: transparent;
              }
              button {
-                 width: 14%;
-                 display: inline;
-                 background-color: transparent;
-                 border: solid 1px #366171;
-                 padding: 5px 0;
-                 text-align: center;
-                 text-decoration: none;
-                 text-transform: uppercase;
-                 border-radius: 5px;
-                 cursor: pointer;
-                 color: #bebebe;
-                 margin: 0 1em;
-             }
-             button#reset {
-                 margin-left: 20em;
-             }
+                width: 30%;
+                display: block;
+                background-color: transparent;
+                border: solid 1px #366171;
+                padding: 5px 0px;
+                margin: 1em 0;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #bebebe;
+            }
+            button#reset {
+                margin-left: 0;
+            }
              #submit:hover {
                  background-color: #366171;
              }
@@ -319,7 +325,37 @@
      
      //Kontakt i tablet version
      @media screen and (max-width: $mobile) {
-         //SEKTION FIRST I PC VERSION - EMILIE
+         //SEKTION FIRST I MOBILE VERSION - EMILIE
+         header {
+            position: relative;
+        }
+        #search {
+            display: none;
+        }
+        nav {
+            position: absolute;
+            top: 80px;
+           ul {
+            background-color:#5f93aa;
+            padding:10px;
+           } 
+        }
+        header nav ul li a {
+                color:black;
+                padding: 15px;     
+        }
+        
+        header #nav- {
+            display: none;
+        }
+        
+        header #hamburger {
+            position: absolute;
+            top:20px;
+            right: 20px;
+            color:white;
+            display: block;
+        }
          #first {
              @include section;
              article h4 {
@@ -355,7 +391,7 @@
                  @include brødtext;
              }
          }
-         //SEKTION FIRST I PC VERSION - EMILIE
+         //SEKTION FIRST I MOBILE VERSION - EMILIE
          #second {
              @include section;
              display: block;
@@ -430,21 +466,21 @@
                  background-color: transparent;
              }
              button {
-                 width: 14%;
-                 display: inline;
+                 width: 30%;
+                 display: block;
                  background-color: transparent;
                  border: solid 1px #366171;
-                 padding: 5px 0;
+                 padding: 5px 0px;
+                 margin: 1em 0;
                  text-align: center;
                  text-decoration: none;
                  text-transform: uppercase;
                  border-radius: 5px;
                  cursor: pointer;
                  color: #bebebe;
-                 margin: 0 1em;
              }
              button#reset {
-                 margin-left: 10em;
+                 margin-left: 0;
              }
              #submit:hover {
                  background-color: #366171;
@@ -453,4 +489,13 @@
                  background-color: #dc6036;
              }
          }
+         footer #articles-wrap {
+            display: block;
+            article{
+    
+                a{
+                display: block;
+                }
+            }
+        }
      }

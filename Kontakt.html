@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/kontakt.css">
-    <!-- <link rel="stylesheet" href="assets/css/header-footer.css"> -->
-    <script src="assets/js/kontakt.js"></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <!-- FÆLLLES HEADER TIL ALLE SIDER -->
-    <header>
-        <img class="header-img" src="./assets//media//Header-Img.png" alt="">
-        <img class="logo" src="./assets/media/company_logo.png" alt="company logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="arbejdsmiljo.html">Arbejdsmiljø</a></li>
-                <li><a href="ydelser.html">Ydelser</a></li>
-                <li><a href="cases.html">Cases</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-            </ul>
-            <div>
-                <input type="text">
-                <img src="./assets/media/lup.png" alt="søgelup">
-            </div>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/kontakt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Kontakt | Gruppe 3</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-img" src="./assets//media//Header-Img.png" alt="">
+            <img class="logo" src="./assets/media/company_logo.png" alt="company logo">
+            <nav id="nav-">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="arbejdsmiljo.html">Arbejdsmiljø</a></li>
+                    <li><a href="ydelser.html">Ydelser</a></li>
+                    <li><a href="cases.html">Cases</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </ul>
+                <div id="search">
+                    <input type="text">
+                    <img src="./assets/media/lup.png" alt="søgelup">
+                </div>
+            </nav>
+            <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </header>
 
     <!-- SEKTION 1 - TEXT+BILLEDE - GRIDS -->
     <section id="first">
@@ -128,7 +128,7 @@
         <div id="articles-wrap">
             <article>
                 <a href=""></a>
-                <h4>Trivsel:</h4>
+                <h4>Trivsel &#9660;</h4>
                 <a href="https://www.arbejdsmiljoweb.dk/trivsel">Godt psykisk arbejdsmiljø</a>
                 <a href="https://www.arbejdsmiljoweb.dk/trivsel/stress">Stress og stresshåndtering</a>
                 <a href="https://www.arbejdsmiljoweb.dk/trivsel/social_kapital">Samarbejde og relationer</a>
@@ -138,7 +138,7 @@
             </article>
             <article>
                 <a href=""></a>
-                <h4>Indeklima:</h4>
+                <h4>Indeklima &#9660;</h4>
                 <a href="https://www.arbejdsmiljoweb.dk/stoej_lys_og_luft/stoej-paa-arbejdspladsen">Generende støj</a>
                 <a href="https://www.arbejdsmiljoweb.dk/stoej_lys_og_luft/luft-varme-og-lys">Kulde og træk</a>
                 <a href="https://www.arbejdsmiljoweb.dk/stoej_lys_og_luft/luft-varme-og-lys">Luftkvalitet</a>
@@ -148,7 +148,7 @@
             </article>
             <article>
                 <a href=""></a>
-                <h4>Din arbejdsplads:</h4>
+                <h4>Din arbejdsplads &#9660;</h4>
                 <a href="https://www.arbejdsmiljoweb.dk/din_arbejdsplads/daginstitution">Daginstitution</a>
                 <a href="https://www.arbejdsmiljoweb.dk/din_arbejdsplads/kontoromraadet">Kontor</a>
                 <a href="https://www.arbejdsmiljoweb.dk/din_arbejdsplads/undervisning">Undervisning</a>
@@ -158,7 +158,7 @@
             </article>
             <article>
                 <a href=""></a>
-                <h4>Arbejdsmiljøarbejdet:</h4>
+                <h4>Arbejdsmiljøarbejdet &#9660;</h4>
                 <a href="https://www.arbejdsmiljoweb.dk/krop-og-sundhed/ergonomi_paa_din_arbejdsplads/sygehusbehandling_hjemmet/samarbejde/samarbejde_om_patienten">Det daglige samarbejde:</a>
                 <a href="https://www.arbejdsmiljoweb.dk/arbejdsmiljoearbejdet/apv">APV - Arbejdspladsvurdering</a>
                 <a href="https://www.arbejdsmiljoweb.dk/arbejdsmiljoearbejdet/arbejdsulykker">Arbejdsulykker - et overblik</a>
@@ -175,6 +175,22 @@
 
         </div>
     </footer>
+    <script>
+        let x = document.getElementById("nav-");
+            const hamburger = document.getElementById("hamburger");
+        function myfunction() {
+            if (x.style.display === "block"){
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+
+        }
+        
+        hamburger.onclick = function(){
+            myfunction()
+        }
+    </script>
 </body>
 
 </html>

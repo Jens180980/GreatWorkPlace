@@ -114,6 +114,10 @@ section {
   margin: 1em 0;
 }
 
+header #hamburger {
+  display: none;
+}
+
 #first {
   background-color: #5f93aa;
   display: -ms-grid;
@@ -319,11 +323,45 @@ section {
 }
 
 @media screen and (max-width: 700px) {
+  header {
+    position: relative;
+  }
+  #search {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    top: 80px;
+  }
+  nav ul {
+    background-color: #5f93aa;
+    padding: 10px;
+  }
+  header nav ul li a {
+    color: black;
+    padding: 15px;
+  }
+  header #nav- {
+    display: none;
+  }
+  header #hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    display: block;
+  }
   #second .figures-wrapper {
     display: block;
   }
   #second .figures-wrapper figure {
     margin-bottom: 1em;
+  }
+  footer #articles-wrap {
+    display: block;
+  }
+  footer #articles-wrap article a {
+    display: block;
   }
 }
 
@@ -335,6 +373,10 @@ section {
 
 section {
   padding: 10px;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 .textdiv {
@@ -493,14 +535,12 @@ section {
 }
 
 .medarbejdere {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
-  grid-auto-rows: minmax(min-content, max-content);
 }
 
 .medarbejdere img {
@@ -526,7 +566,7 @@ figcaption {
   opacity: 80%;
   width: 100%;
   position: absolute;
-  margin-top: -86px;
+  bottom: 0%;
 }
 
 figcaption p {
@@ -537,6 +577,15 @@ figcaption p {
 
 .Lovstof {
   max-width: 80%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  font-size: 0.9em;
+  margin: 1em;
+  font-size: 1.25em;
+  margin-top: 0;
+  width: 80%;
   margin: auto;
 }
 
@@ -560,6 +609,17 @@ figcaption p {
 
 .Lovstof a {
   color: white;
+}
+
+.Lovstof ol {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  font-size: 0.9em;
+  margin: 1em;
+  font-size: 1.25em;
+  margin-top: 0;
+  font-size: 1.1vw;
 }
 
 .vidste-du {
@@ -662,6 +722,12 @@ figcaption p {
   }
   .medarbejdere figcaption {
     width: 80%;
+  }
+  footer #articles-wrap {
+    display: block;
+  }
+  footer #articles-wrap article a {
+    display: block;
   }
 }
 /*# sourceMappingURL=ydelser.css.map */

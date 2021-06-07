@@ -5,6 +5,10 @@
 @include header;
 @include footer;
 
+section{
+    padding-bottom: 1px;
+    margin-bottom: 15em;
+}
 .styled-section { 
 
     @include styled-section();
@@ -16,9 +20,13 @@
         opacity: 80%;
     }
     
-    h4 , p{
+    h4 {
         font-size: 1.1vw;
-        margin: 20px;
+        margin: 1em !important;
+    }
+    p{
+        font-size: 1.1vw;
+        margin: 1em;
     }
     
     img:hover {
@@ -39,6 +47,7 @@
 }
 .textdiv a {
     color: #dc6036;
+    padding-left: 5px;
 
 }
 
@@ -74,6 +83,18 @@ $mobile:700px;
             }
             p {
                 font-size: 4vw;
+            }
+        }
+    }
+    #nav- {
+        z-index: 20;
+    }
+    footer #articles-wrap {
+        display: block;
+        article{
+
+            a{
+            display: block;
             }
         }
     }

@@ -16,6 +16,9 @@ main{
     margin: auto;
 }
     
+header #hamburger {
+    display: none;
+}
     // INFO SECTION
 #info{
     display: grid;
@@ -24,7 +27,7 @@ main{
     padding: 2em 0;
 
     article{
-        padding: 1em;
+        padding: 0.1em 1em 1em 1em;
     }
     article:nth-of-type(1){
         background-color: #dc6036;
@@ -38,9 +41,7 @@ main{
     }
     article:nth-of-type(3){
         background-color: #dc6036;
-        a{
-            color: black;
-        }
+        color: white;
     }
     img{
         width: 100%;
@@ -71,11 +72,11 @@ main{
         border: 1px solid black;
     }
     figcaption{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         background-color: #5f93aa;
         color: white;
         padding: 1em;
-        height: 5em;
+        height: 6em;
     }
 }
 
@@ -83,6 +84,7 @@ main{
 // MEDIA QUERIES 700-1200PX
 @media screen and (max-width: 1200px){
 
+    
 
     #info{
         display: block;
@@ -96,9 +98,47 @@ main{
 
 // MEDIA QUERIES UNDER 700PX
 @media screen and (max-width: 700px){
-
+    header {
+        position: relative;
+    }
+    #search {
+        display: none;
+    }
+    nav {
+        position: absolute;
+        top: 80px;
+       ul {
+        background-color:#5f93aa;
+        padding:10px;
+       } 
+    }
+    header nav ul li a {
+            color:black;
+            padding: 15px;     
+    }
+    
+    header #nav- {
+        display: none;
+    }
+    
+    header #hamburger {
+        position: absolute;
+        top:20px;
+        right: 20px;
+        color:white;
+        display: block;
+    }
     .gallery-wrap{
         display: block;
+    }
+    footer #articles-wrap {
+        display: block;
+        article{
+
+            a{
+            display: block;
+            }
+        }
     }
 
 } // MQ 700PX ENDS

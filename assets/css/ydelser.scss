@@ -74,6 +74,9 @@
     section{
         padding: 10px;
     }
+    p{
+        margin-bottom: 10px;
+    }
     @mixin textdiv {
         
         .førsteP {
@@ -204,10 +207,11 @@
     
     }
     .medarbejdere {
-        @include section;
+        // @include section;
+        width: 80%;
+        margin:auto;
         display: grid;
-        grid-template-columns: auto auto auto auto ;
-        grid-auto-rows: minmax(min-content, max-content);
+        grid-template-columns: auto auto auto auto;
 
         img {
             height: 100%;
@@ -230,7 +234,7 @@
                 opacity: 80%;
                 width: 100%;
                 position: absolute;
-                margin-top: -86px; 
+                bottom: 0%;
             p {
                 color: white;
                 margin:0 0 0 10px;
@@ -240,6 +244,9 @@
     
         .Lovstof {
              @include section;
+             @include brødtext;
+             width:80%;
+             margin: auto;
             article {
                 background-color: #366171;
                 padding: 20px;
@@ -256,6 +263,11 @@
             }
             a{
                 color: white;
+        }
+        ol{
+            @include brødtext;
+            font-size: 1.1vw;
+
         }
         
     }
@@ -367,7 +379,15 @@
             width: 80%;
         }
        }
-       
+       footer #articles-wrap {
+        display: block;
+        article{
+
+            a{
+            display: block;
+            }
+        }
+    } 
     }
 
     

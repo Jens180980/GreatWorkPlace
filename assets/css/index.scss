@@ -45,6 +45,12 @@ section{
     margin: 1em 0;
 }
 
+// Nav section
+
+header #hamburger {
+    display: none;
+}
+
 // First section
 #first {
     background-color: #5f93aa;
@@ -200,6 +206,37 @@ section{
 // MOBIL MQ UNDER 700PX 
 @media screen and (max-width: 700px){
 
+    header {
+        position: relative;
+    }
+    #search {
+        display: none;
+    }
+    nav {
+        position: absolute;
+        top: 80px;
+       ul {
+        background-color:#5f93aa;
+        padding:10px;
+       } 
+    }
+    header nav ul li a {
+            color:black;
+            padding: 15px;     
+    }
+    
+    header #nav- {
+        display: none;
+    }
+    
+    header #hamburger {
+        position: absolute;
+        top:20px;
+        right: 20px;
+        color:white;
+        display: block;
+    }
+   
     #second{
         .figures-wrapper{
             display: block;
@@ -209,5 +246,13 @@ section{
             }
         }
     }
+    footer #articles-wrap {
+        display: block;
+        article{
 
+            a{
+            display: block;
+            }
+        }
+    }
 } // MOBIL MQ ENDS

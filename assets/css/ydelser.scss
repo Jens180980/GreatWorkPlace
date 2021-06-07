@@ -2,6 +2,7 @@
 // font-family: 'Open Sans', sans-serif;
 @import 'index.scss';
  
+// EVA
 @mixin overskrifter {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -19,6 +20,7 @@
     margin-top: 0;
     }
     
+    // mixin til at genbruge senere
 @mixin styled-section {
     @include section;
     display: grid;
@@ -102,7 +104,7 @@
         }
     }
     
-    
+    // 1 section
     .video-section {
         @include section;
         display: grid;
@@ -128,7 +130,7 @@
             font-size: 1.1vw;
         }
     }
-        
+    //   Styling af video pop-up  
     }
     .video.active {
         visibility: visible;
@@ -241,7 +243,7 @@
                 padding: 0;
             }
         }
-    
+    // sekv skrevet section
         .Lovstof {
              @include section;
              @include brødtext;
@@ -271,6 +273,7 @@
         }
         
     }
+    // selv skrevet section
     .vidste-du {
         @include section;
         background-color: #dc6036;

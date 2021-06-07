@@ -1292,6 +1292,7 @@ section {
   background-color: white;
   margin-bottom: 10px;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 .textdiv .førsteP {

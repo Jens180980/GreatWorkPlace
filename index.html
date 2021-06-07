@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Great Workplace | Gruppe 3</title>
     </head>
+
+    <!-- HTML HAR VI LAVET SAMMEN -->
+
     <body>
         <header>
             <img class="header-img" src="./assets//media//Header-Img.png" alt="">
@@ -25,6 +28,7 @@
                     <img src="./assets/media/lup.png" alt="søgelup">
                 </div>
             </nav>
+            <!-- BURGERMENU TIL MOBIL -->
             <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars fa-2x"></i>
             </a>
@@ -119,6 +123,7 @@
     <footer>
         <div id="articles-wrap">
             <article>
+                <!-- &#9660; ER ASCII FOR CHEVRON DOWN -->
                 <h4>Trivsel &#9660;</h4>
                 <a href="https://www.arbejdsmiljoweb.dk/trivsel">Godt psykisk arbejdsmiljø</a>
                 <a href="https://www.arbejdsmiljoweb.dk/trivsel/stress">Stress og stresshåndtering</a>
@@ -162,8 +167,9 @@
             </div>
         </footer>
         <script>
+            // BURGERMENU ON OFF
             let x = document.getElementById("nav-");
-                const hamburger = document.getElementById("hamburger");
+            const hamburger = document.getElementById("hamburger");
             function myfunction() {
                 if (x.style.display === "block"){
                     x.style.display = "none";

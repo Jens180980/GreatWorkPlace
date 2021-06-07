@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/ydelser.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Great Workplace | Gruppe 3</title>
+        <title>Ydelser | Gruppe 3</title>
     </head>
     <body>
         <header>
@@ -25,6 +25,7 @@
                     <img src="./assets/media/lup.png" alt="søgelup">
                 </div>
             </nav>
+            <!-- BURGERMENU -->
             <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars fa-2x"></i>
             </a>
@@ -43,8 +44,10 @@
                 Fysisk Aktivitet og Sundhed i arbejdslivet.</p>
                 <p>Stillesiddende arbejde kan skade helbredet, viser rapport fra Vidensråd for Forebyggelse Der kan være en sundhedsmæssig risiko forbundet med at sidde stille i længere tid. ... Nøgleord er variation. </p>
                     <p>Det er en fornuftig idé at give medarbejderne mulighed for at afbryde det stillesiddende arbejde med korte aktive pauser.</p>
+                    <!-- TOGGLES VIDEO MODAL -->
                 <a href="javascript:void(0);" onclick="toggle();">Se karens Video om stillesiddende arbejde.</a>
             </article>
+            <!-- VIDEO MODAL -->
             <div class="video">
                 <video src="./assets/media/Video-01.mp4" controls="true"></video>
                 <img src="./assets/media/close.png" class="close" onclick="toggle();" alt="">
@@ -197,11 +200,13 @@
             </div>
         </footer>
         <script type="text/javascript">
+            // VIDEO TOGGLE
             function toggle(){
                 var video = document.querySelector(".video")
                 video.classList.toggle("active")
             }
             
+            // BURGERMENU
             let x = document.getElementById("nav-");
                 const hamburger = document.getElementById("hamburger");
             function myfunction() {
